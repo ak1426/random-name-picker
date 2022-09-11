@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Picker</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tagify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.16.4/tagify.min.css" integrity="sha512-Ft73YZFLhxI8baaoTdSPN8jKRPhYu441A8pqlqf/CvGkUOaLCLm59ZWMdls8lMBPjs1OZ31Vt3cmZsdBa3EnMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main_div d-flex justify-content-center align-items-center " id="main_div">
+                    <div class="name_picker box p-2" >
+                        <span class="borders"></span>
+                        <span class="borders"></span>
+                        <span class="borders"></span>
+                        <span class="borders"></span>
+                        <div class="content">
+                            <div class="heading mb-5 text-effect" > 
+                                <div class="neon">Lucky Draw</div>
+                                <!-- <div class="neon">Lucky Draw 😂</div> -->
+                                <div class="gradient"></div>
+                                <div class="spotlight"></div>
+                            </div>
+                            <div class="error-alert-box d-none" >
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <p class="error_message"></p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <input type="text" name="names" id="names" >
+                            </div>
+                            <div class="form-text mb-5 text-left text-white">
+                                Enter multiple names by comma(,) seperated.
+                            </div>
+                            <div>
+                                <button class="custom-btn btn-effect" id="saveNames" >Draw</button>
+                                <button class="custom-btn btn-effect" id="autoFill" >Example</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js files here -->
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js" integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- tagify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.16.4/jQuery.tagify.min.js" integrity="sha512-7FXJGI148AtG0unHsnoEtTgcm5rbM9lfm1n22rzKK6VtZD7CrNJp5sURjap0feGt1Z4ROXTtNkIL3a/ItqASOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
